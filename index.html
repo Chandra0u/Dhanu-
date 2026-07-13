@@ -1,0 +1,2017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Dhanush </title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    font-family:Arial,sans-serif;
+    text-align:center;
+    color:white;
+    overflow-x:hidden;
+
+    background:linear-gradient(
+        -45deg,
+        #001219,
+        #005f73,
+        #0a9396,
+        #8338ec,
+        #ff006e,
+        #ff8500
+    );
+
+    background-size:500% 500%;
+    animation:bgMove 13s ease infinite;
+}
+
+@keyframes bgMove{
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:-1;
+
+    background-image:
+        radial-gradient(circle,white 1px,transparent 2px),
+        radial-gradient(circle,#ffd93d 1px,transparent 2px);
+
+    background-size:
+        45px 45px,
+        70px 70px;
+
+    opacity:0.2;
+}
+
+.hidden{
+    display:none !important;
+}
+
+.screen{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:25px 15px;
+}
+
+.panel{
+    width:min(950px,100%);
+    padding:30px;
+    border-radius:30px;
+
+    background:rgba(255,255,255,0.14);
+    border:2px solid rgba(255,255,255,0.35);
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,0.35),
+        0 0 35px rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(15px);
+}
+
+h1{
+    margin:18px 0;
+    font-size:clamp(2.5rem,8vw,5.5rem);
+
+    text-shadow:
+        0 0 18px white,
+        0 0 38px #ff3cac;
+}
+
+h2{
+    font-size:clamp(1.8rem,5vw,3rem);
+    text-shadow:0 0 18px rgba(255,255,255,0.8);
+}
+
+h3{
+    font-size:1.4rem;
+}
+
+p{
+    line-height:1.7;
+}
+
+.badge{
+    display:inline-block;
+    padding:9px 18px;
+    border-radius:30px;
+
+    background:#fff4a8;
+    color:#431653;
+
+    font-weight:bold;
+    box-shadow:0 0 20px rgba(255,244,168,0.6);
+}
+
+button,
+input{
+    font:inherit;
+}
+
+button{
+    border:none;
+    border-radius:30px;
+    padding:13px 22px;
+    margin:8px;
+
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+
+    background:linear-gradient(
+        45deg,
+        #ff006e,
+        #ff8500
+    );
+
+    box-shadow:
+        0 8px 24px rgba(0,0,0,0.28),
+        0 0 20px rgba(255,255,255,0.25);
+
+    transition:
+        transform 0.25s,
+        box-shadow 0.25s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.32),
+        0 0 28px rgba(255,255,255,0.35);
+}
+
+button:active{
+    transform:scale(0.97);
+}
+
+.date-input,
+.word-input{
+    padding:13px 16px;
+    border:none;
+    border-radius:16px;
+
+    color:#3d1654;
+    background:white;
+
+    font-weight:bold;
+    text-align:center;
+    outline:none;
+}
+
+.date-input{
+    display:block;
+    width:min(310px,90%);
+    margin:22px auto;
+}
+
+.word-input{
+    width:90%;
+    max-width:260px;
+}
+
+.error{
+    min-height:25px;
+    margin-top:8px;
+    color:#fff49a;
+    font-weight:bold;
+}
+
+/* Welcome photo */
+
+.portal{
+    width:220px;
+    height:220px;
+    margin:28px auto;
+    padding:8px;
+    border-radius:50%;
+
+    background:conic-gradient(
+        #ff006e,
+        #ffbe0b,
+        #00f5d4,
+        #3a86ff,
+        #8338ec,
+        #ff006e
+    );
+
+    box-shadow:
+        0 0 25px white,
+        0 0 55px rgba(255,0,110,0.8);
+
+    animation:portalGlow 1.7s ease-in-out infinite alternate;
+}
+
+.portal img{
+    width:100%;
+    height:100%;
+    display:block;
+
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid white;
+}
+
+@keyframes portalGlow{
+    from{
+        transform:scale(1);
+
+        box-shadow:
+            0 0 20px white,
+            0 0 35px #00f5d4;
+    }
+
+    to{
+        transform:scale(1.05);
+
+        box-shadow:
+            0 0 30px white,
+            0 0 70px #ff006e;
+    }
+}
+
+/* Friendship challenge */
+
+.progress-wrap{
+    max-width:620px;
+    height:18px;
+    margin:25px auto;
+    padding:3px;
+    border-radius:30px;
+
+    background:rgba(255,255,255,0.2);
+}
+
+.progress{
+    width:0;
+    height:100%;
+    border-radius:30px;
+
+    background:linear-gradient(
+        90deg,
+        #ffd93d,
+        #ff3cac,
+        #00e5ff
+    );
+
+    transition:width 0.5s;
+}
+
+.challenge-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:20px;
+}
+
+.challenge{
+    min-height:230px;
+    padding:22px;
+    border-radius:24px;
+
+    background:rgba(255,255,255,0.14);
+    border:1px solid rgba(255,255,255,0.3);
+
+    box-shadow:0 12px 30px rgba(0,0,0,0.2);
+
+    transition:
+        transform 0.4s,
+        background 0.4s,
+        box-shadow 0.4s;
+}
+
+.challenge:hover{
+    transform:translateY(-5px);
+}
+
+.challenge.done{
+    background:rgba(61,255,151,0.22);
+    border-color:#55ff9c;
+
+    box-shadow:
+        0 0 28px rgba(61,255,151,0.6);
+}
+
+.challenge-icon{
+    font-size:60px;
+}
+
+/* Gallery */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.memory-card{
+    padding:12px;
+    border-radius:22px;
+
+    background:rgba(255,255,255,0.17);
+
+    box-shadow:
+        0 12px 32px rgba(0,0,0,0.25);
+
+    transition:transform 0.3s;
+}
+
+.memory-card:hover{
+    transform:translateY(-7px) scale(1.02);
+}
+
+.memory-card img,
+.placeholder{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+
+    border-radius:17px;
+    border:4px solid white;
+}
+
+.placeholder{
+    display:grid;
+    place-items:center;
+    font-size:65px;
+
+    background:linear-gradient(
+        135deg,
+        #ffd93d,
+        #ff3cac,
+        #00c9ff
+    );
+}
+
+.memory-card small{
+    display:block;
+    padding:11px 0 4px;
+    font-weight:bold;
+}
+
+/* Video */
+
+.video-section{
+    margin-top:42px;
+    padding:26px;
+    border-radius:27px;
+
+    background:rgba(255,255,255,0.14);
+    border:1px solid rgba(255,255,255,0.35);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.28);
+}
+
+.video-section video{
+    width:100%;
+    max-width:680px;
+    margin-top:18px;
+
+    border-radius:22px;
+    border:5px solid white;
+    background:black;
+
+    box-shadow:
+        0 0 25px #ffd93d,
+        0 0 45px rgba(255,60,172,0.7);
+}
+
+/* Secret bag */
+
+.bag-zone{
+    margin-top:42px;
+    padding:30px;
+    border-radius:28px;
+
+    background:rgba(0,0,0,0.2);
+}
+
+.bag{
+    font-size:110px;
+    cursor:pointer;
+
+    animation:bagBounce 1.5s ease-in-out infinite;
+
+    filter:drop-shadow(0 0 22px gold);
+}
+
+@keyframes bagBounce{
+    50%{
+        transform:translateY(-16px) rotate(5deg);
+    }
+}
+
+.lock-panel{
+    margin-top:20px;
+    padding:22px;
+    border-radius:22px;
+
+    background:rgba(255,255,255,0.15);
+}
+
+.pin-display{
+    width:250px;
+    max-width:90%;
+    height:55px;
+    margin:15px auto;
+
+    display:grid;
+    place-items:center;
+
+    border-radius:16px;
+    color:#3c1552;
+    background:white;
+
+    letter-spacing:14px;
+    padding-left:14px;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.keypad{
+    width:300px;
+    max-width:100%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.keypad button{
+    margin:0;
+    border-radius:15px;
+
+    color:#47175f;
+    background:white;
+
+    box-shadow:none;
+}
+
+.secret-letter{
+    margin-top:28px;
+    padding:30px;
+    border-radius:23px;
+
+    text-align:left;
+    color:#3f284b;
+
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #fff1c6
+    );
+
+    box-shadow:
+        0 0 32px rgba(255,255,255,0.8);
+
+    animation:letterOpen 0.8s ease;
+}
+
+.secret-letter h3{
+    text-align:center;
+    color:#e01875;
+    font-size:30px;
+}
+
+.secret-letter p{
+    font-size:18px;
+    font-weight:600;
+    line-height:1.9;
+}
+
+@keyframes letterOpen{
+    from{
+        opacity:0;
+        transform:scale(0.7) rotateX(70deg);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+/* Cake */
+
+.cake-stage{
+    margin-top:42px;
+    padding:30px 15px;
+    border-radius:28px;
+
+    background:rgba(0,0,0,0.2);
+}
+
+.cake-art{
+    position:relative;
+    width:280px;
+    height:255px;
+    margin:25px auto;
+}
+
+.plate{
+    position:absolute;
+    bottom:0;
+
+    width:280px;
+    height:42px;
+    border-radius:50%;
+
+    background:linear-gradient(
+        #effcff,
+        #8bdcff
+    );
+}
+
+.layer{
+    position:absolute;
+    left:35px;
+    bottom:28px;
+
+    width:210px;
+    height:92px;
+
+    border-radius:24px 24px 16px 16px;
+
+    background:linear-gradient(
+        #ff86bb,
+        #ff438e
+    );
+
+    border:5px solid #fff0f7;
+}
+
+.layer.top{
+    left:60px;
+    bottom:111px;
+
+    width:160px;
+    height:72px;
+
+    background:linear-gradient(
+        #7fe9ff,
+        #2bb9df
+    );
+}
+
+.icing{
+    position:absolute;
+    left:60px;
+    bottom:164px;
+
+    width:160px;
+    height:25px;
+    border-radius:50%;
+
+    background:white;
+}
+
+.candle{
+    position:absolute;
+    left:132px;
+    bottom:183px;
+
+    width:17px;
+    height:48px;
+    border-radius:5px;
+
+    background:repeating-linear-gradient(
+        45deg,
+        white 0 7px,
+        #ff4d9e 7px 14px
+    );
+}
+
+.flame{
+    position:absolute;
+    left:128px;
+    bottom:230px;
+
+    width:25px;
+    height:38px;
+    border-radius:50%;
+
+    background:radial-gradient(
+        circle at 50% 70%,
+        white 0 12%,
+        #ffd93d 30%,
+        #ff6b00 72%
+    );
+
+    box-shadow:
+        0 0 18px #ffd93d,
+        0 0 35px #ff7a18;
+
+    animation:flicker 0.15s infinite alternate;
+}
+
+.flame.out{
+    display:none;
+}
+
+@keyframes flicker{
+    from{
+        transform:rotate(-4deg) scale(0.95);
+    }
+
+    to{
+        transform:rotate(4deg) scale(1.08);
+    }
+}
+
+.smoke{
+    position:absolute;
+    left:132px;
+    bottom:230px;
+
+    opacity:0;
+    font-size:30px;
+}
+
+.smoke.show{
+    animation:smokeMove 1.8s ease-out;
+}
+
+@keyframes smokeMove{
+    from{
+        opacity:0.8;
+        transform:translateY(0);
+    }
+
+    to{
+        opacity:0;
+        transform:translateY(-80px) scale(1.5);
+    }
+}
+
+.meter{
+    width:min(430px,90%);
+    height:17px;
+    margin:15px auto;
+
+    border-radius:30px;
+    overflow:hidden;
+
+    background:rgba(255,255,255,0.22);
+}
+
+.meter-fill{
+    width:0;
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        #00e5ff,
+        #ffd93d,
+        #ff3cac
+    );
+}
+
+.final-card{
+    margin-top:30px;
+    padding:30px;
+    border-radius:28px;
+
+    background:rgba(255,255,255,0.17);
+}
+
+.final-name{
+    font-size:clamp(2.5rem,7vw,5rem);
+    font-weight:900;
+
+    color:#fff7a8;
+
+    text-shadow:
+        0 0 28px hotpink;
+}
+
+/* Floating effects */
+
+.floating{
+    position:fixed;
+    bottom:-45px;
+    z-index:100;
+
+    pointer-events:none;
+
+    animation:floatUp linear forwards;
+}
+
+@keyframes floatUp{
+    to{
+        transform:translateY(-115vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+.confetti{
+    position:fixed;
+    top:-20px;
+    width:11px;
+    height:18px;
+    z-index:999;
+
+    pointer-events:none;
+
+    animation:confettiFall linear forwards;
+}
+
+@keyframes confettiFall{
+    to{
+        transform:translateY(110vh) rotate(720deg);
+    }
+}
+
+.toast{
+    position:fixed;
+    left:50%;
+    bottom:25px;
+    z-index:1000;
+
+    padding:13px 20px;
+    border-radius:30px;
+
+    color:#3c1650;
+    background:white;
+    font-weight:bold;
+
+    transform:
+        translateX(-50%)
+        translateY(130px);
+
+    transition:0.35s;
+}
+
+.toast.show{
+    transform:
+        translateX(-50%)
+        translateY(0);
+}
+
+@media(max-width:600px){
+    .panel{
+        padding:22px 15px;
+    }
+
+    .portal{
+        width:190px;
+        height:190px;
+    }
+
+    .cake-art{
+        transform:scale(0.86);
+    }
+
+    .secret-letter{
+        padding:20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- WELCOME SCREEN -->
+
+<section id="welcomeScreen" class="screen">
+
+    <div class="panel">
+
+        <span class="badge">
+            TOP SECRET BIRTHDAY MISSION
+        </span>
+
+        <h1>
+            Dhanush's Birthday Celebration
+        </h1>
+
+        <div class="portal">
+            <img src="cover.jpg" alt="Dhanush">
+        </div>
+
+        <p>
+            Only the real birthday star can unlock this colorful surprise.
+        </p>
+
+        <input
+            class="date-input"
+            type="date"
+            id="birthdayInput"
+        >
+
+        <button onclick="verifyBirthday()">
+            Unlock the Portal 
+        </button>
+
+        <div id="birthdayError" class="error"></div>
+
+    </div>
+
+</section>
+
+
+<!-- FRIENDSHIP LEVEL -->
+
+<section id="missionScreen" class="screen hidden">
+
+    <div class="panel">
+
+        <span class="badge">
+            LEVEL 1
+        </span>
+
+        <h2>
+            Complete the Friendship Mission 
+        </h2>
+
+        <p>
+            Finish all three challenges to open the memory world.
+        </p>
+
+        <div class="progress-wrap">
+            <div id="missionProgress" class="progress"></div>
+        </div>
+
+        <div class="challenge-grid">
+
+            <div id="challenge1" class="challenge">
+
+                <div class="challenge-icon">
+                    
+                </div>
+
+                <h3>Balloon Challenge</h3>
+
+                <p>
+                    Pop the birthday balloon.
+                </p>
+
+                <button onclick="completeChallenge(1)">
+                    Pop Balloon 
+                </button>
+
+            </div>
+
+
+            <div id="challenge2" class="challenge">
+
+                <div class="challenge-icon">
+                    
+                </div>
+
+                <h3>Lucky Star Challenge</h3>
+
+                <p>
+                    Catch the moving lucky star.
+                </p>
+
+                <button
+                    id="starButton"
+                    onclick="catchStar()"
+                >
+                    Catch Me! 
+                </button>
+
+            </div>
+
+
+            <div id="challenge3" class="challenge">
+
+                <div class="challenge-icon">
+                    
+                </div>
+
+                <h3>Friendship Question</h3>
+
+                <p>
+                    What do you usually call me? 
+                </p>
+
+                <input
+                    id="friendWord"
+                    class="word-input"
+                    placeholder="Your answer"
+                >
+
+                <br>
+
+                <button onclick="checkFriendWord()">
+                    Check Answer
+                </button>
+
+            </div>
+
+        </div>
+
+        <div id="missionDone" class="hidden">
+
+            <h2>
+                Mission Completed! 
+            </h2>
+
+            <p>
+                You completed the friendship challenge successfully.
+            </p>
+
+            <button onclick="openMemoryWorld()">
+                Enter Memory World 
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MEMORY LEVEL -->
+
+<section id="memoryScreen" class="screen hidden">
+
+    <div class="panel">
+
+        <span class="badge">
+            LEVEL 2
+        </span>
+
+        <h2>
+            Our Colorful Memories 
+        </h2>
+
+        <p>
+            Nine special memories from our friendship.
+        </p>
+
+        <div
+            class="gallery"
+            id="gallery"
+        ></div>
+
+
+        <!-- VIDEO SECTION -->
+
+        <div class="video-section">
+
+            <h2>
+                 Our Special Birthday Video 
+            </h2>
+
+            <p>
+                A special video filled with memories and birthday wishes.
+            </p>
+
+            <video
+                controls
+                preload="metadata"
+                playsinline
+            >
+
+                <source
+                    src="birthday.mp4"
+                    type="video/mp4"
+                >
+
+                Your browser does not support this video.
+
+            </video>
+
+        </div>
+
+
+        <!-- SECRET BAG -->
+
+        <div class="bag-zone">
+
+            <h2>
+                The Secret Friendship Bag 
+            </h2>
+
+            <p>
+                A private birthday letter is hidden inside.
+                Tap the bag to unlock it.
+            </p>
+
+            <div
+                class="bag"
+                onclick="showLock()"
+            >
+                
+            </div>
+
+            <div
+                id="lockPanel"
+                class="lock-panel hidden"
+            >
+
+                <p>
+                    Enter the four-digit secret code
+                </p>
+
+                <div
+                    id="pinDisplay"
+                    class="pin-display"
+                >
+                    ••••
+                </div>
+
+                <div class="keypad">
+
+                    <button onclick="pressKey('1')">
+                        1
+                    </button>
+
+                    <button onclick="pressKey('2')">
+                        2
+                    </button>
+
+                    <button onclick="pressKey('3')">
+                        3
+                    </button>
+
+                    <button onclick="pressKey('4')">
+                        4
+                    </button>
+
+                    <button onclick="pressKey('5')">
+                        5
+                    </button>
+
+                    <button onclick="pressKey('6')">
+                        6
+                    </button>
+
+                    <button onclick="pressKey('7')">
+                        7
+                    </button>
+
+                    <button onclick="pressKey('8')">
+                        8
+                    </button>
+
+                    <button onclick="pressKey('9')">
+                        9
+                    </button>
+
+                    <button onclick="clearPin()">
+                        
+                    </button>
+
+                    <button onclick="pressKey('0')">
+                        0
+                    </button>
+
+                    <button onclick="unlockBag()">
+                        
+                    </button>
+
+                </div>
+
+                <div
+                    id="pinError"
+                    class="error"
+                ></div>
+
+            </div>
+
+
+            <!-- SECRET LETTER -->
+
+            <div
+                id="secretLetter"
+                class="secret-letter hidden"
+            >
+
+                <h3>
+                     Happy Birthday, Dhanush! 
+                </h3>
+
+                <p>
+                    I am truly thankful to God for giving me such a good
+                    friend in B.Tech. I usually do not trust people easily,
+                    but somehow I began to trust you deeply, and that trust
+                    means a lot to me.
+                </p>
+
+                <p>
+                    Many people may give different suggestions about
+                    friendship, but I never want to leave a bond that feels
+                    genuine and important to my heart.
+                </p>
+
+                <p>
+                    Even when we fight or stop talking for some time, the
+                    moment you come and speak to me, all my anger slowly
+                    disappears.
+                </p>
+
+                <p>
+                    Please remain the same friend you were before. I want
+                    you to know that I will always stand with you in every
+                    situation, during both happy moments and difficult times.
+                </p>
+
+                <p>
+                    I trust only a very small number of people in my life,
+                    and you are one of those special people. I hope our
+                    friendship becomes stronger, more understanding, and
+                    more beautiful with every passing year.
+                </p>
+
+                <p>
+                    On your special day, I wish you endless happiness,
+                    success in your career, good health, peace of mind,
+                    and the courage to achieve every dream you have.
+                </p>
+                
+                <p>
+                    May your life always be filled with good people,
+                    unforgettable memories, and countless reasons to smile.
+                </p>
+
+                <p style="
+                    text-align:center;
+                    color:#d71775;
+                    font-size:23px;
+                ">
+                    Happy Birthday once again, Dhanush! 
+                    <br><br>
+                    Stay happy, stay strong, and always stay special.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CAKE LEVEL -->
+
+        <div class="cake-stage">
+
+            <span class="badge">
+                FINAL LEVEL
+            </span>
+
+            <h2>
+                Make a Wish and Blow the Candle 
+            </h2>
+
+            <p>
+                Hold the blow button or use the microphone.
+                You can light the candle again and repeat.
+            </p>
+
+            <div class="cake-art">
+
+                <div class="plate"></div>
+
+                <div class="layer"></div>
+
+                <div class="layer top"></div>
+
+                <div class="icing"></div>
+
+                <div class="candle"></div>
+
+                <div
+                    id="flame"
+                    class="flame"
+                ></div>
+
+                <div
+                    id="smoke"
+                    class="smoke"
+                >
+                    
+                </div>
+
+            </div>
+
+            <div class="meter">
+                <div
+                    id="meterFill"
+                    class="meter-fill"
+                ></div>
+            </div>
+
+            <button id="blowBtn">
+                Hold to Blow 
+            </button>
+
+            <button onclick="startMic()">
+                Use Microphone 
+            </button>
+
+            <button onclick="relightCandle()">
+                Light Again 
+            </button>
+
+            <div
+                id="finalCard"
+                class="final-card hidden"
+            >
+
+                <div class="final-name">
+                    Happy Birthday Dhanush!
+                </div>
+
+                <p>
+                    May this birthday begin a wonderful new chapter filled
+                    with happiness, success, laughter, peace, friendship,
+                    and unforgettable memories.
+                </p>
+
+                <button onclick="celebrate()">
+                    Celebrate Again 
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div id="toast" class="toast"></div>
+
+
+<script>
+const correctBirthday = "2007-07-15";
+const secretCode = "1507";
+
+let completedChallenges = new Set();
+let enteredPin = "";
+let blowPower = 0;
+let blowTimer = null;
+
+const photoFiles = [
+    "photo1.jpg",
+    "photo2.jpg",
+    "photo3.jpg",
+    "photo4.jpg",
+    "photo5.jpg",
+    "photo6.jpg",
+    "photo7.jpg",
+    "photo8.jpg",
+    "photo9.jpg"
+];
+
+const photoCaptions = [
+    "A memory worth keeping",
+    "Good times together",
+    "Our B.Tech friendship",
+    "Smiles and stories",
+    "A special moment",
+    "Beautiful memories",
+    "Friendship forever",
+    "Another unforgettable day",
+    "More memories to come"
+];
+
+const placeholderIcons = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+];
+
+
+function showToast(message){
+
+    const toast =
+        document.getElementById("toast");
+
+    toast.textContent = message;
+
+    toast.classList.add("show");
+
+    setTimeout(function(){
+
+        toast.classList.remove("show");
+
+    },2200);
+}
+
+
+function verifyBirthday(){
+
+    const enteredBirthday =
+        document
+            .getElementById("birthdayInput")
+            .value;
+
+    const errorBox =
+        document.getElementById("birthdayError");
+
+    if(enteredBirthday === correctBirthday){
+
+        errorBox.textContent = "";
+
+        document
+            .getElementById("welcomeScreen")
+            .classList.add("hidden");
+
+        document
+            .getElementById("missionScreen")
+            .classList.remove("hidden");
+
+        createConfetti(100);
+
+        startFloatingItems();
+
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
+
+    }else{
+
+        errorBox.textContent =
+            "The portal is still locked. Enter the correct birthday.";
+    }
+}
+
+
+function completeChallenge(number){
+
+    if(completedChallenges.has(number)){
+        return;
+    }
+
+    completedChallenges.add(number);
+
+    const challenge =
+        document.getElementById(
+            "challenge" + number
+        );
+
+    challenge.classList.add("done");
+
+    updateChallengeProgress();
+}
+
+
+function catchStar(){
+
+    const starButton =
+        document.getElementById("starButton");
+
+    if(completedChallenges.has(2)){
+        return;
+    }
+
+    starButton.style.transform =
+        "translate(" +
+        (Math.random() * 100 - 50) +
+        "px," +
+        (Math.random() * 60 - 30) +
+        "px)";
+
+    starButton.textContent =
+        "Almost! Catch Me ";
+
+    setTimeout(function(){
+
+        completeChallenge(2);
+
+        starButton.textContent =
+            "Lucky Star Caught! ";
+
+        starButton.style.transform =
+            "none";
+
+    },800);
+}
+function checkFriendWord(){
+
+    const answer =
+        document
+            .getElementById("friendWord")
+            .value
+            .trim()
+            .toLowerCase();
+
+    if(
+        answer === "mama" ||
+        answer === "chandra"
+    ){
+
+        completeChallenge(3);
+
+        showToast(
+            "Correct! You know me very well "
+        );
+
+    }else{
+
+        showToast(
+            "Wrong answer. Think about what you usually call me "
+        );
+    }
+}
+
+
+function updateChallengeProgress(){
+
+    const completedCount =
+        completedChallenges.size;
+
+    const percentage =
+        completedCount / 3 * 100;
+
+    document
+        .getElementById("missionProgress")
+        .style.width =
+        percentage + "%";
+
+    if(completedCount === 3){
+
+        document
+            .getElementById("missionDone")
+            .classList.remove("hidden");
+
+        createConfetti(80);
+    }
+}
+
+
+function openMemoryWorld(){
+
+    document
+        .getElementById("missionScreen")
+        .classList.add("hidden");
+
+    document
+        .getElementById("memoryScreen")
+        .classList.remove("hidden");
+
+    createGallery();
+
+    createConfetti(130);
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+}
+
+
+function createGallery(){
+
+    const gallery =
+        document.getElementById("gallery");
+
+    if(gallery.children.length > 0){
+        return;
+    }
+
+    photoFiles.forEach(function(file,index){
+
+        const card =
+            document.createElement("div");
+
+        card.className =
+            "memory-card";
+
+        const image =
+            document.createElement("img");
+
+        image.src = file;
+
+        image.alt =
+            "Dhanush Birthday Memory";
+
+        image.onerror = function(){
+
+            image.remove();
+
+            const placeholder =
+                document.createElement("div");
+
+            placeholder.className =
+                "placeholder";
+
+            placeholder.textContent =
+                placeholderIcons[index];
+
+            card.prepend(placeholder);
+        };
+
+        const caption =
+            document.createElement("small");
+
+        caption.textContent =
+            photoCaptions[index];
+
+        card.appendChild(image);
+
+        card.appendChild(caption);
+
+        gallery.appendChild(card);
+    });
+}
+function showLock(){
+
+    document
+        .getElementById("lockPanel")
+        .classList.remove("hidden");
+
+    document
+        .getElementById("lockPanel")
+        .scrollIntoView({
+            behavior:"smooth",
+            block:"center"
+        });
+}
+
+
+function pressKey(number){
+
+    if(enteredPin.length < 4){
+
+        enteredPin += number;
+
+        updatePinDisplay();
+    }
+}
+
+
+function clearPin(){
+
+    enteredPin =
+        enteredPin.slice(0,-1);
+
+    updatePinDisplay();
+}
+
+
+function updatePinDisplay(){
+
+    const filled =
+        "".repeat(enteredPin.length);
+
+    const empty =
+        "•".repeat(4 - enteredPin.length);
+
+    document
+        .getElementById("pinDisplay")
+        .textContent =
+        filled + empty;
+}
+function unlockBag(){
+
+    const errorBox =
+        document.getElementById("pinError");
+
+    if(enteredPin === secretCode){
+
+        errorBox.textContent = "";
+
+        document
+            .getElementById("lockPanel")
+            .classList.add("hidden");
+
+        document
+            .getElementById("secretLetter")
+            .classList.remove("hidden");
+
+        createConfetti(120);
+
+        showToast(
+            "Secret friendship message unlocked "
+        );
+
+        document
+            .getElementById("secretLetter")
+            .scrollIntoView({
+                behavior:"smooth"
+            });
+
+    }else{
+
+        errorBox.textContent =
+            "Wrong code. The secret bag is still locked.";
+
+        enteredPin = "";
+
+        updatePinDisplay();
+    }
+}
+
+
+const blowButton =
+    document.getElementById("blowBtn");
+
+
+function startBlowing(){
+
+    const flame =
+        document.getElementById("flame");
+
+    if(flame.classList.contains("out")){
+        return;
+    }
+
+    blowPower = 0;
+
+    clearInterval(blowTimer);
+
+    blowTimer = setInterval(function(){
+
+        blowPower =
+            Math.min(100,blowPower + 4);
+
+        document
+            .getElementById("meterFill")
+            .style.width =
+            blowPower + "%";
+
+        if(blowPower >= 100){
+
+            extinguishCandle();
+
+            stopBlowing();
+        }
+
+    },55);
+}
+
+
+function stopBlowing(){
+
+    clearInterval(blowTimer);
+
+    blowTimer = null;
+
+    const flame =
+        document.getElementById("flame");
+
+    if(!flame.classList.contains("out")){
+
+        blowPower = 0;
+
+        document
+            .getElementById("meterFill")
+            .style.width = "0%";
+    }
+}
+
+
+blowButton.addEventListener(
+    "mousedown",
+    startBlowing
+);
+
+blowButton.addEventListener(
+    "mouseup",
+    stopBlowing
+);
+
+blowButton.addEventListener(
+    "mouseleave",
+    stopBlowing
+);
+
+blowButton.addEventListener(
+    "touchstart",
+    function(event){
+
+        event.preventDefault();
+
+        startBlowing();
+
+    },
+    {passive:false}
+);
+
+blowButton.addEventListener(
+    "touchend",
+    stopBlowing
+);
+
+
+function extinguishCandle(){
+
+    const flame =
+        document.getElementById("flame");
+
+    if(flame.classList.contains("out")){
+        return;
+    }
+
+    flame.classList.add("out");
+
+    const smoke =
+        document.getElementById("smoke");
+
+    smoke.classList.remove("show");
+
+    void smoke.offsetWidth;
+
+    smoke.classList.add("show");
+
+    document
+        .getElementById("meterFill")
+        .style.width = "100%";
+
+    document
+        .getElementById("finalCard")
+        .classList.remove("hidden");
+
+    createConfetti(180);
+
+    showToast(
+        "Wish made! Candle blown out "
+    );
+}
+
+function relightCandle(){
+
+    document
+        .getElementById("flame")
+        .classList.remove("out");
+
+    document
+        .getElementById("meterFill")
+        .style.width = "0%";
+
+    document
+        .getElementById("finalCard")
+        .classList.add("hidden");
+
+    blowPower = 0;
+
+    showToast(
+        "The candle is glowing again "
+    );
+}
+
+
+async function startMic(){
+
+    if(
+        !navigator.mediaDevices ||
+        !navigator.mediaDevices.getUserMedia
+    ){
+
+        showToast(
+            "Microphone is not supported. Use the hold button."
+        );
+
+        return;
+    }
+
+    try{
+
+        const stream =
+            await navigator.mediaDevices.getUserMedia({
+                audio:true
+            });
+
+        const AudioContextClass =
+            window.AudioContext ||
+            window.webkitAudioContext;
+
+        const audioContext =
+            new AudioContextClass();
+
+        const source =
+            audioContext.createMediaStreamSource(
+                stream
+            );
+
+        const analyser =
+            audioContext.createAnalyser();
+
+        analyser.fftSize = 256;
+
+        source.connect(analyser);
+
+        const data =
+            new Uint8Array(
+                analyser.frequencyBinCount
+            );
+
+        let strongFrames = 0;
+
+        function detectBlow(){
+
+            analyser.getByteFrequencyData(data);
+
+            const total =
+                data.reduce(function(sum,value){
+                    return sum + value;
+                },0);
+
+            const average =
+                total / data.length;
+
+            document
+                .getElementById("meterFill")
+                .style.width =
+                Math.min(
+                    100,
+                    average * 1.5
+                ) + "%";
+
+            if(average > 38){
+
+                strongFrames++;
+
+            }else{
+
+                strongFrames =
+                    Math.max(
+                        0,
+                        strongFrames - 1
+                    );
+            }
+
+            if(strongFrames > 7){
+
+                extinguishCandle();
+
+                stream
+                    .getTracks()
+                    .forEach(function(track){
+                        track.stop();
+                    });
+
+                audioContext.close();
+
+                return;
+            }
+
+            requestAnimationFrame(
+                detectBlow
+            );
+        }
+
+        detectBlow();
+
+        showToast(
+            "Microphone ready. Blow now! "
+        );
+
+    }catch(error){
+
+        showToast(
+            "Microphone unavailable. Use the hold button."
+        );
+    }
+}
+
+
+function createConfetti(count){
+
+    const colors = [
+        "#ff006e",
+        "#ffd93d",
+        "#00e5ff",
+        "#8338ec",
+        "#ffffff",
+        "#ff8500"
+    ];
+
+    for(let i = 0; i < count; i++){
+
+        const confetti =
+            document.createElement("div");
+
+        confetti.className =
+            "confetti";
+
+        confetti.style.left =
+            Math.random() * 100 + "vw";
+
+        confetti.style.background =
+            colors[
+                Math.floor(
+                    Math.random() *
+                    colors.length
+                )
+            ];
+
+        confetti.style.animationDuration =
+            Math.random() * 2 +
+            2.5 +
+            "s";
+
+        confetti.style.animationDelay =
+            Math.random() *
+            0.8 +
+            "s";
+
+        document.body.appendChild(
+            confetti
+        );
+
+        setTimeout(function(){
+
+            confetti.remove();
+
+        },4500);
+    }
+}
+
+
+function startFloatingItems(){
+
+    setInterval(function(){
+
+        const item =
+            document.createElement("div");
+
+        const icons = [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ];
+
+        item.className =
+            "floating";
+
+        item.textContent =
+            icons[
+                Math.floor(
+                    Math.random() *
+                    icons.length
+                )
+            ];
+
+        item.style.left =
+            Math.random() *
+            100 +
+            "vw";
+
+        item.style.fontSize =
+            Math.random() *
+            20 +
+            20 +
+            "px";
+
+        item.style.animationDuration =
+            Math.random() *
+            3 +
+            5 +
+            "s";
+
+        document.body.appendChild(
+            item
+        );
+
+        setTimeout(function(){
+
+            item.remove();
+
+        },8000);
+
+    },650);
+}
+function celebrate(){
+
+    createConfetti(250);
+
+    showToast(
+        "Happy Birthday, Dhanush! "
+    );
+}
+</script>
+
+</body>
+</html>
